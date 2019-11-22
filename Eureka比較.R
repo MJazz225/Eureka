@@ -1,5 +1,5 @@
 #########################################################
-#  問題出在FTSE是
+#  
 #  
 #
 #########################################################
@@ -55,4 +55,5 @@ t.test(as.vector(EurekaAIClose), as.vector(EurekaHedgeClose), paired = FALSE, mu
 t.test(as.vector(EurekaAIClose), as.vector(FTSEClose), paired = FALSE, mu = 0, conf.level =  0.95,
        var.equal = TRUE)
 
-chart.CumReturns(merge(simpleretAI,simpleretHedge,simpleretFTSE), legend.loc = "bottomright", main = "EurekaAI vs HedgeFund vs FTSE", date.format = "%m-%Y")
+chart.CumReturns(merge(simpleretAI,simpleretHedge,simpleretFTSE), legend.loc = "bottomright", 
+                 main = "EurekaAI vs HedgeFund vs FTSE", date.format = "%m-%Y")
